@@ -7,13 +7,26 @@ const App = () => {
   const cardSetDescription = "Test your knowledge of countries and their capitals!";
   
   const cards = [
-    { question: "France", answer: "Paris", difficulty: "easy"},
-    { question: "Brazil", answer: "Brasília" },
-    { question: "Japan", answer: "Tokyo" },
-    { question: "Canada", answer: "Ottawa" },
-    { question: "India", answer: "New Delhi" },
-    { question: "Afghanistan", answer: "Kabul" },
-    { question: "China", answer: "Beijing" }
+    { question: "France", answer: "Paris", difficulty: "easy" },
+    { question: "Canada", answer: "Ottawa", difficulty: "easy" },
+    { question: "Japan", answer: "Tokyo", difficulty: "easy" },
+    { question: "Germany", answer: "Berlin", difficulty: "easy" },
+    { question: "Brazil", answer: "Brasília", difficulty: "easy" },
+    { question: "Italy", answer: "Rome", difficulty: "easy" },
+
+    { question: "Norway", answer: "Oslo", difficulty: "medium" },
+    { question: "Argentina", answer: "Buenos Aires", difficulty: "medium" },
+    { question: "Egypt", answer: "Cairo", difficulty: "medium" },
+    { question: "Mexico", answer: "Mexico City", difficulty: "medium" },
+    { question: "Australia", answer: "Canberra", difficulty: "medium" },
+    { question: "South Africa", answer: "Pretoria", difficulty: "medium" },
+    
+    { question: "Kazakhstan", answer: "Nur-Sultan", difficulty: "hard" },
+    { question: "Madagascar", answer: "Antananarivo", difficulty: "hard" },
+    { question: "Belarus", answer: "Minsk", difficulty: "hard" },
+    { question: "Mozambique", answer: "Maputo", difficulty: "hard" },
+    { question: "New Zealand", answer: "Wellington", difficulty: "hard" },
+    { question: "Kyrgyzstan", answer: "Bishkek", difficulty: "hard" }
   ];
 
   const totalCards = cards.length;

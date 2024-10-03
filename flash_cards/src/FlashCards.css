@@ -1,5 +1,5 @@
 /* Common card styles */
-.card {
+.cards {
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -12,15 +12,15 @@
   
   /* Colors for difficulty levels */
   .easy {
-    background-color: #d4edda; /* Green */
+    background-color: #a1fcb7; /* Green */
   }
   
   .medium {
-    background-color: #fff3cd; /* Yellow */
+    background-color: #fff5a8; /* Yellow */
   }
   
   .hard {
-    background-color: #f8d7da; /* Red */
+    background-color: #ff9da5; /* Red */
   }
   
   /* Button styles */
