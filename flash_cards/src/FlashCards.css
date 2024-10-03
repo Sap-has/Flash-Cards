@@ -1,0 +1,39 @@
+/* Common card styles */
+.card {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Colors for difficulty levels */
+  .easy {
+    background-color: #d4edda; /* Green */
+  }
+  
+  .medium {
+    background-color: #fff3cd; /* Yellow */
+  }
+  
+  .hard {
+    background-color: #f8d7da; /* Red */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

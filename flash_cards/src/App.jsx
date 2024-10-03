@@ -7,10 +7,13 @@ const App = () => {
   const cardSetDescription = "Test your knowledge of countries and their capitals!";
   
   const cards = [
-    { question: "France", answer: "Paris" },
+    { question: "France", answer: "Paris", difficulty: "easy"},
     { question: "Brazil", answer: "Brasília" },
     { question: "Japan", answer: "Tokyo" },
-    { question: "Canada", answer: "Ottawa" }
+    { question: "Canada", answer: "Ottawa" },
+    { question: "India", answer: "New Delhi" },
+    { question: "Afghanistan", answer: "Kabul" },
+    { question: "China", answer: "Beijing" }
   ];
 
   const totalCards = cards.length;
