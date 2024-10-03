@@ -9,21 +9,29 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  .title {
+    font-size: 2rem;
+    margin: 0; 
+    color: #007bff; 
+  }
+
+  .country-title, .capital-title {
+    font-size: 1.5rem;
+  }
   
-  /* Colors for difficulty levels */
   .easy {
-    background-color: #a1fcb7; /* Green */
+    background-color: #a1fcb7; 
   }
   
   .medium {
-    background-color: #fff5a8; /* Yellow */
+    background-color: #fff5a8; 
   }
   
   .hard {
-    background-color: #ff9da5; /* Red */
+    background-color: #ff9da5; 
   }
   
-  /* Button styles */
   button {
     padding: 10px 15px;
     background-color: #4caf50;
@@ -37,3 +45,21 @@
     background-color: #45a049;
   }
   
+  @media (max-width: 480px) {
+    .cards {
+      width: 150px;
+    }
+
+    .title {
+      font-size: 1.3rem;
+    }
+
+    .country-title, .capital-title {
+      font-size: 0.9rem; 
+    }
+  
+    button {
+      padding: 6px 12px; 
+      font-size: 0.8rem; 
+    }
+  }

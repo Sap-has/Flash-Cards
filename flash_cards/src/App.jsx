@@ -33,22 +33,41 @@ const App = () => {
 
   const [currentCard, setCurrentCard] = useState(cards[0]); 
   const [showQuestion, setShowQuestion] = useState(true);   
+  const [filteredCards, setFilteredCards] = useState(cards);
 
   const handleCardClick = () => {
     setShowQuestion(!showQuestion);
   };
 
   const handleNextCard = () => {
-    const randomIndex = Math.floor(Math.random() * totalCards);
-    setCurrentCard(cards[randomIndex]);
-    setShowQuestion(true); 
+    const randomIndex = Math.floor(Math.random() * filteredCards.length);
+    setCurrentCard(filteredCards[randomIndex]);
+    setShowQuestion(true);
+  };
+
+  const handleFilterCards = (difficulty) => {
+    if (difficulty === "all") {
+      setFilteredCards(cards);
+    } else {
+      setFilteredCards(cards.filter(cards => cards.difficulty === difficulty));
+    }
+    setFilteredCards(filtered);
+    setCurrentCard(filtered[0]);
+    setShowQuestion(true);
   };
 
   return (
     <div className="App">
       <h1>{cardSetTitle}</h1>
       <p>{cardSetDescription}</p>
-      <p>Total Cards: {totalCards}</p>
+      <p>Total Cards: {filteredCards.length}</p>
+
+      <div className="button-group">
+        <button onClick={() => handleFilterCards("all")}>All</button>
+        <button onClick={() => handleFilterCards("easy")}>Easy</button>
+        <button onClick={() => handleFilterCards("medium")}>Medium</button>
+        <button onClick={() => handleFilterCards("hard")}>Hard</button>
+      </div>
 
       <Flashcards
         card={currentCard} 

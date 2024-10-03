@@ -6,7 +6,17 @@ const Flashcards = ({ card, showQuestion, onClick }) => {
 
     return (
       <div className={cardClass} onClick={onClick}>
-        <h2>{showQuestion ? card.question : card.answer}</h2>
+        {showQuestion ? (
+        <>
+          <h2 className="title">Country</h2>
+          <h2 className="country-title">{card.question}</h2> {/* Country Name */}
+        </>
+      ) : (
+        <>
+          <h2 className="title">Capital</h2>
+          <h2 className="capital-title">{card.answer}</h2> {/* Capital Name */}
+        </>
+      )}
       </div>
     );
 };
