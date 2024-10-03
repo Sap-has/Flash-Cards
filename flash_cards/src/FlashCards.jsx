@@ -9,12 +9,12 @@ const Flashcards = ({ card, showQuestion, onClick }) => {
         {showQuestion ? (
         <>
           <h2 className="title">Country</h2>
-          <h2 className="country-title">{card.question}</h2> {/* Country Name */}
+          <h2 className="country-title">{card.question}</h2> {}
         </>
       ) : (
         <>
           <h2 className="title">Capital</h2>
-          <h2 className="capital-title">{card.answer}</h2> {/* Capital Name */}
+          <h2 className="capital-title">{card.answer}</h2> {}
         </>
       )}
       </div>
